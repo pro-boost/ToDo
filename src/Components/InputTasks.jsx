@@ -1,7 +1,7 @@
 function InputTasks({ task, handleSubmit, handleInputChange }) {
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <form role="form" onSubmit={handleSubmit}>
         <input
           type="text"
           name="To Do"

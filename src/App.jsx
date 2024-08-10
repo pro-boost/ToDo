@@ -1,8 +1,8 @@
 import "./App.css";
 import { useState } from "react";
 import InputTasks from "./Components/InputTasks";
-import DisplaytTasks from "./Components/displayTasks";
-import CountTask from "./Components/CountTask";
+import DisplaytTasks from "./Components/DisplayTasks";
+import CountTasks from "./Components/CountTasks";
 function App() {
   const [task, setTask] = useState("");
   const [tasks, setTasks] = useState([]);
@@ -28,7 +28,7 @@ function App() {
         handleSubmit={handleSubmit}
       />
       <DisplaytTasks tasks={tasks} />
-      <CountTask count={count} />
+      <CountTasks count={count} />
     </>
   );
 }
